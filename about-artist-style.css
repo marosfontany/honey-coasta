@@ -135,7 +135,6 @@ main{
 .vl{
 
     border-left: 4px solid #222925;
-    width: 6px;
     height: 100%;  
 }
 
@@ -144,7 +143,7 @@ h1 {
     font-size: 25px;
     color: #222925;
     margin-bottom: 20px;
-    width: 100%;
+    width: 99%;
 }
 
 p{
@@ -158,8 +157,8 @@ p{
 
 .honeycoasta-field {
     border: #222925 solid 4px;
-     width: 260px;
-     margin-top: px;
+     width: 280px;
+     margin-top: -40px;
      margin-bottom: 20px;
    
 }
@@ -167,20 +166,20 @@ p{
 .honeycoasta-glasses {
     border: #222925 solid 4px;
     margin-top: 30px;
-    margin-bottom: 30px;
-    width: 260px;
+    margin-bottom: 50px;
+    width: 280px;
 }
 
 .honey{
-    margin-bottom: -70px;
-    width: 100px;
+    margin-top: -50px;
+    width: 35%;
     margin-left: 200px;
     z-index: 2;
    
 
 }
 
-#readmorebtn , #readmorebtn2{
+#readmorebtn , #readmorebtn2, #readmorebtn3{
     font-family: 'Montserrat';
     font-size: 15px;
     font-weight: bold;
@@ -200,6 +199,8 @@ p{
 
 #more {display: none;}
 #more2 {display: none;}
+#more3 {display: none;}
+
 
 
 .animation{
@@ -214,6 +215,27 @@ hr{
     
 }
 
+.road{
+    width: 100%;
+    border: #222925 solid 4px;
+    margin-top:20px ;
+    margin-bottom: 40px;
+}
+.logo{
+    width:80%;
+    margin-left: 10%;
+}
+
+.meaning-behind-name{
+    display: flex;
+    flex-direction: row;
+}
+
+.meaning-behind-name p {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
 
 @media(min-width: 1440px) {
     .buttons {
