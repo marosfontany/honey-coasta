@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5ECDF;
+    z-index: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.line {
+    height: 4px;
+    background-color: #222925;
+}
+
+nav {
+    margin-top: 40px;
+}
+
+.header-grid {
+    display: none;
+}
+
+.menu {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.mainmenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5ECDF;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 25px;
+    border-bottom: solid 4px #222925;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.nav-links {
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "close-button close-button"
+    "lt en"
+    "hc hc";
+    align-items: center;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.close-button {
+    grid-area: close-button;
+    border-bottom: solid 4px #222925;
+}
+
+.lt {
+    grid-area: lt;
+    border-right: solid 4px #222925;
+}
+
+.en {
+    grid-area: en;
+}
+
+.hc {
+    grid-area: hc;
+    text-align: center;
+    border-top: solid 4px #222925;
+}
+
+.logo {
+    display: flex;
+}
+
+.wasp {
+    width: 65px;
+}
+
+.honeycoasta {
+    width: 190px;
+}
+
+main{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.artist-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+.vl{
+
+    border-left: 4px solid #222925;
+    width: 6px;
+    height: 100%;  
+}
+
+h1 {
+    font-family: 'archivo';
+    font-size: 25px;
+    color: #222925;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+p{
+    font-family: 'Montserrat';
+    color: #222925;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+
+}
+
+.honeycoasta-field {
+    border: #222925 solid 4px;
+     width: 260px;
+     margin-top: px;
+     margin-bottom: 20px;
+   
+}
+
+.honeycoasta-glasses {
+    border: #222925 solid 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 260px;
+}
+
+.honey{
+    margin-bottom: -70px;
+    width: 100px;
+    margin-left: 200px;
+    z-index: 2;
+   
+
+}
+
+#readmorebtn , #readmorebtn2{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.readmore{
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+    border-color: #222925;
+    border-width: 3px;
+
+   
+
+}
+
+#more {display: none;}
+#more2 {display: none;}
+
+
+.animation{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border-top: 4px solid #222925;
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
+
+@media(min-width: 1440px) {
+    .buttons {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .honeycoasta {
+        width: 150px;
+    }
+
+    .wasp {
+        display: none;
+    }
+
+    .lt, .en, .close-button,.menu-button {
+        font-size: 1em;
+        padding: 55px;
+    }
+
+    .buttons > * {
+        transform: rotate(-90deg);
+    } 
+
+    .mainmenu {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+
+    }
+
+    .navigation {
+        height: 100vh;
+        padding: 0;
+        padding-top: 10vh;
+    }
+
+    .hc {
+        border-top: none;
+    }
+
+    .en {
+        border-right: solid 4px #222925;
+        border-left: solid 4px #222925;
+    }
+
+    .lt {
+        border-right: solid 4px #222925;
+    }
+
+    .close-button {
+        border-bottom: none;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    nav li {
+        padding: 30px;
+    }
+
+    .buttons, .nav-links {
+        height: 85vh;
+    }
+
+    .header-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+
+    }
+
+    .introduction {
+        border: solid 4px #222925;
+        margin: 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+
