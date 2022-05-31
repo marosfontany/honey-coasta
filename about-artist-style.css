@@ -237,6 +237,36 @@ hr{
     width: 100%;
 }
 
+.inspirations{
+    display: flex;
+    flex-direction: column;
+}
+
+.inspirations h1{
+    text-align: right;
+}
+
+.inspirations p{
+    width: 97%;
+    margin-left: 5%;
+}
+
+.rightbtn{
+    text-align: right;
+}
+
+.transition{
+    display: flex;
+}
+.transition .vl{
+    margin-left: 5%; 
+    height: 160px;
+}
+
+.star {
+    width: 50%;
+}
+
 @media(min-width: 1440px) {
     .buttons {
         grid-template-areas: 
