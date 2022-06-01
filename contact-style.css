@@ -122,11 +122,13 @@ nav ul li a {
 }
 
 /* main*/
+/* something on your mind*/
 
 h1{
     font-family: 'Archivo Black';
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: #222925;
 }
 .title{
     width: 70%;
@@ -154,6 +156,64 @@ h1{
     max-width: 43%;
     border: solid 4px #222925;
     margin-top: 60px;
+}
+
+/* write me an email*/
+
+.formbox{
+    border: solid 4px #222925;
+    margin: 40px 20px 40px 20px ;
+
+}
+.formtitle{
+    width: 80%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.form{
+    margin: 5% 10% 12% 5%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #222925;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #F5ECDF;
+    color: #222925;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #222925;
+}
+#message{
+    padding:50px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color:#F5ECDF;
+    color: #222925;
+    padding: 14px 20px;
+    margin: 8px 0;
+   display: inline-block;
+    border: 3px solid #222925;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.bumblebee{
+    max-width: 52%;
+    margin-top: -7.8rem;
+    margin-left: -3rem;
+    z-index: 5;
+    position: relative;
 }
 
 @media(min-width: 1440px) {
