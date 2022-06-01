@@ -7,6 +7,11 @@
 body {
     background-color: #F5ECDF;
     z-index: 0;
+    color: #222925;
+}
+
+body a {
+    text-decoration: none;
 }
 
 h2 {
@@ -192,6 +197,84 @@ h1 {
     font-family: Archivo, sans-serif;
     font-style: normal;
 }
+
+/* about artist section starts here */
+
+.about {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.about-paragraph {
+    border: solid 4px #222925;
+    margin: 40px;
+    background-color: #A4BFBA;
+}
+
+.tagline {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+    border: solid 4px #222925;
+    margin: 16px;
+    padding: 24px;
+    margin-right: 40px;
+}
+
+.tagline-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 16px;
+    margin-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about-picture {
+    margin-top: -65px;
+    margin-left: 60px;
+}
+
+.picture-button-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.read-more {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #222925;
+    border: solid 4px #222925;
+    font-size: 1em;
+    margin-left: -18px;
+}
+
+.circles {
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 6px #222925;
+    margin-right: auto;
+    margin-left: 40%;
+    margin-top: -50px;
+}
+
+.inside-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #222925;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/* about artist section ends here */
 
 @media(min-width: 1440px) {
     .buttons {
