@@ -31,8 +31,35 @@ nav {
     margin-top: 40px;
 }
 
-.header-grid {
+.menu-for-desktop {
     display: none;
+}
+
+.introduction {
+    margin: 40px;
+    border: solid 4px #222925;
+    display: grid;
+}
+
+.logo-mobile {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    width: 300px;
+    height: 17px;
+    margin-bottom: 5%;
+    background-color: #A4BFBA;
+    border: solid 4px #222925;
+    text-align: right;
+}
+
+.line1 {
+    width: 200px;
 }
 
 .menu {
@@ -121,6 +148,51 @@ nav ul li a {
     width: 190px;
 }
 
+.main-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-image1 {
+    display: none;
+}
+
+.main-image2 {
+    height: 250px;
+    width: 210px;
+    object-fit: cover;
+    border: solid 4px #222925;
+    margin-top: -140px;
+}
+
+.circle {
+    background-color: #DBA840;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 4px #222925;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.strong-name {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+}
+
 @media(min-width: 1440px) {
     .buttons {
         grid-template-areas: 
@@ -192,6 +264,10 @@ nav ul li a {
 
     .buttons, .nav-links {
         height: 85vh;
+    }
+
+    .menu-for-desktop {
+        display: block;
     }
 
     .header-grid {
