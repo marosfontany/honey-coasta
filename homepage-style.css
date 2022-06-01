@@ -198,14 +198,14 @@ h1 {
     font-style: normal;
 }
 
-/* about artist section starts here */
-
-.about {
+.section-titles {
     font-family: Archivo, sans-serif;
     font-style: normal;
     border: solid 4px #222925;
     margin: 40px;
 }
+
+/* about artist section starts here */
 
 .about-paragraph {
     border: solid 4px #222925;
@@ -275,6 +275,60 @@ h1 {
 }
 
 /* about artist section ends here */
+
+/* about collaborations section starts here */
+
+.bee-animation {
+    width: 90%;
+    position: absolute;
+}
+
+.collabs {
+    background-color: #537358;
+    color: #F5ECDF;
+}
+
+.socials {
+    border: solid 4px #222925;
+    width: 91px;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5ECDF;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.instagram {
+    width: 53px;
+}
+
+.collab {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 4px #222925;
+}
+
+.collab-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: solid 4px #222925;
+    background-color: #537358;
+    color: #F5ECDF;
+    margin: 40px;
+    padding: 20px;
+}
+
+
+
+/* about collaborations section ends here */
 
 @media(min-width: 1440px) {
     .buttons {
