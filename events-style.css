@@ -9,6 +9,8 @@ body {
     z-index: 0;
 }
 
+
+/* styling of the menu, code done by Maroš Fontany*/
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -121,6 +123,24 @@ nav ul li a {
     width: 190px;
 }
 
+/* end of styling of the menu*/
+
+.title {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-top: 20px;
+    color: #f5ecdf;
+    background-color: #bf5123;
+    text-align: center;
+    padding: 20px;
+}
+
+.abt-ev {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* media queries */
+
 @media(min-width: 1440px) {
     .buttons {
         grid-template-areas: 
@@ -213,7 +233,10 @@ nav ul li a {
 
 
 }
-
+ @font-face {
+     font-family: Archivo;
+     src: url();
+ }
 
 .nav-active{
     transform: translateX(0%);
