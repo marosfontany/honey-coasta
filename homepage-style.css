@@ -330,6 +330,92 @@ h1 {
 
 /* about collaborations section ends here */
 
+/* footer starts here */
+
+footer {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2 {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.terms {
+    grid-area: terms;
+    border-bottom: solid 4px #222925;
+}
+
+.policy {
+    grid-area: policy;
+    border-bottom: solid 4px #222925;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 240px;
+}
+
+.footer-line {
+    grid-area: footer-line;
+    height: 4px;
+    width: 165px;
+    background-color: #222925;
+}
+
+.copy {
+    grid-area: copy;
+    padding: 0;
+}
+
+.tiktok {
+    grid-area: tiktok;
+}
+
+.ig {
+    grid-area: ig;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+    border-top: solid 4px #222925;
+}
+
+.apple {
+    grid-area: apple;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.spotify {
+    grid-area: spotify;
+    border-top: solid 4px #222925;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    "terms terms"
+    "policy policy"
+    "footer-logo footer-logo"
+    "footer-line copy"
+    "tiktok ."
+    "ig soundcloud"
+    "apple spotify";
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer ends here */
+
 @media(min-width: 1440px) {
     .buttons {
         grid-template-areas: 
@@ -338,6 +424,16 @@ h1 {
         "en"
         "hc";
         grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
     }
 
     .honeycoasta {
@@ -407,10 +503,20 @@ h1 {
         display: block;
     }
 
-    .header-grid {
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .wrapper {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
 
     }
 
