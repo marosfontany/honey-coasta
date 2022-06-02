@@ -209,16 +209,15 @@ input[type=submit] {
     font-weight: 600;
 }
 .bumblebee{
-    max-width: 51%;
-    margin-top: -7.8rem;
-    margin-left: -3rem;
+    max-width: 30%;
+    margin-top: -8rem;
     z-index: 5;
     position: relative;
 }
 
 /* streaming links*/
 .stream{
-    margin: 0px 20px 40px 40px ;
+    margin: 10px 20px 40px 40px ;
 }
 .applediv{
     background-color: #537358;
@@ -251,7 +250,7 @@ input[type=submit] {
 /* social media links*/
 
 .socials{
-    margin: 70px 20px 40px 20px ;
+    margin: 55px 20px 40px 20px ;
 }
 .fbdiv{
     background-color: #537358;
