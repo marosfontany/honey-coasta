@@ -218,7 +218,7 @@ input[type=submit] {
 
 /* streaming links*/
 .stream{
-    margin: 0px 20px 40px 20px ;
+    margin: 0px 20px 40px 40px ;
 }
 .applediv{
     background-color: #537358;
@@ -247,6 +247,64 @@ input[type=submit] {
 .spotify{
     max-width: 100%;
 }
+
+/* social media links*/
+
+.socials{
+    margin: 70px 20px 40px 20px ;
+}
+.fbdiv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: 5% 12% 5% 12%;
+    padding: 20%;
+}
+.fb{
+    max-width: 100%;
+}
+.redball{
+    max-width: 70%;
+    margin-top: -6rem;
+    margin-left: 4.5rem;
+    position: relative;
+    z-index: -3;
+}
+
+.igdiv{
+    background-color: #BF5123;
+    border: 4px solid #222925;
+    margin: 5% 12% 5% 12%;
+    padding: 20%;
+}
+.ig{
+    max-width: 100%;
+}
+.blueball{
+    max-width: 65%;
+    margin-top: -7rem;
+    margin-right: 22%;
+    margin-left: 20%;
+    position: relative;
+    z-index: -3;
+}
+
+.tiktokdiv{
+    background-color: #537358;
+    border: 4px solid #222925;
+    margin: 20% 12% 5% 12%;
+    padding: 18%;
+}
+.tiktok{
+    max-width: 100%;
+}
+.greenball{
+    max-width: 65%;
+    margin-top: -6rem;
+    margin-left: -3rem;
+    position: relative;
+    z-index: -1;
+}
+
 
 @media(min-width: 1440px) {
     .buttons {
