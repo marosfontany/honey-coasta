@@ -33,7 +33,7 @@ h2 a {
 }
 
 nav {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .menu-for-desktop {
@@ -83,7 +83,6 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     overflow-y: scroll;
-    z-index: 10;
 }
 
 nav li {
@@ -276,6 +275,70 @@ h1 {
 
 /* about artist section ends here */
 
+/* new releases section starts here */
+.releases {
+    background-color: #DBA840;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.swiper-slide {
+    width: 200px;
+    height: 200px;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.swiper-slide img {
+    width: 200px;
+    height: 200px;
+    border: solid 4px #222925;
+}
+
+.slider-title-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider-title-flex h2 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+.slider-title-flex h3 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.slider-socials {
+    border: solid 4px #222925;
+    width: 200px;
+    padding: 20px;
+}
+
+.slider-socials h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 0.7cm;
+}
+
+
+
+
+/* new releases section ends here */
+
 /* about collaborations section starts here */
 
 .bee-animation {
@@ -464,6 +527,7 @@ footer h2 {
         height: 100vh;
         padding: 0;
         padding-top: 10vh;
+        z-index: 100;
     }
 
     .hc {
@@ -484,7 +548,7 @@ footer h2 {
     }
 
     nav {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     .navigation {
@@ -501,6 +565,7 @@ footer h2 {
 
     .menu-for-desktop {
         display: block;
+        position: fixed;
     }
 
     .sidebar {
@@ -526,6 +591,10 @@ footer h2 {
     }
 
     .menu {
+        display: none;
+    }
+
+    .swiper {
         display: none;
     }
 
