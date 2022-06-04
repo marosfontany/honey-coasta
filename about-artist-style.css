@@ -132,8 +132,12 @@ main{
     justify-content: space-between;
    }
 
-.vl{
+.background-right{
+    display: flex;
+    flex-direction: column;
+}
 
+.vl{
     border-left: 4px solid #222925;
     height: 100%;  
 }
@@ -175,8 +179,6 @@ p{
     width: 35%;
     margin-left: 200px;
     z-index: 2;
-   
-
 }
 
 #readmorebtn , #readmorebtn2, #readmorebtn3{
@@ -192,9 +194,6 @@ p{
     background-color: transparent;
     border-color: #222925;
     border-width: 3px;
-
-   
-
 }
 
 #more {display: none;}
@@ -228,7 +227,7 @@ hr{
 }
 
 
-.logo{
+.logoimg{
     width:80%;
     margin-left: 10%;
 }
@@ -265,10 +264,14 @@ hr{
 .transition{
     display: flex;
 }
-.transition .vl{
+
+.vl-transition{
+    border-left: 4px solid #222925;
+    height: 100%;  
     margin-left: 5%; 
     height: 160px;
 }
+
 
 .star {
     margin-top: -15px;
@@ -303,8 +306,20 @@ h4{
     padding: 30px;
 }
 
+.title{
+    display: none;
+}
+
+.vl_desktop{
+    display: none;
+}
+
+.vl-road{
+    display: none;
+}
 
 @media(min-width: 1440px) {
+
     .buttons {
         grid-template-areas: 
         "close-button"
@@ -394,6 +409,147 @@ h4{
     }
 
 
+    .vl_desktop{
+        display: block; 
+        border-left: 4px solid #222925;
+        height: 90%;
+        grid-area: line;  
+        margin-top: 67px;
+    }
+
+    .vl-road{
+        display: block;
+        border-left: 4px solid #222925;
+        height: 100%;  
+        margin-left: 43%; 
+        margin-top: 20px;
+        height: 160px;
+    }
+
+
+
+    .vl{
+        display: none;
+    
+    }
+
+    .animation{
+        grid-area: rightpicture;
+        width: 100%;
+        height: 100%;
+    }
+
+    .artist-background{
+        display: block;
+
+    }
+
+    .desktop_block{
+        display: grid;
+        grid-template-areas: 
+        "lefttext line rightpicture title"
+        "leftpicture line righttext title";
+        grid-template-columns: 9fr 1fr 9fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        height: 700px;
+     
+      }
+
+    .button_div{
+        display: none;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    .p-left{
+
+        grid-area: lefttext;
+        margin-top: 80px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .p-right{
+        grid-area: righttext ;
+        width: 80%;
+    }
+
+    .honeycoasta-field{
+        grid-area: rightpicture;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    
+    }
+
+    .artist-background h1 {
+        padding: 3px;
+    }
+
+    .honeycoasta-glasses{
+        margin-left: 30%;
+        grid-area: leftpicture;
+        margin-top: -80px;
+    }
+
+    main{
+        width: 79%;
+        float: right;
+        border: #222925 solid 4px;
+    }
+
+
+    .honey{
+        margin-left: 260px;
+        margin-bottom: -38%;
+        margin-top: 40px;
+    }
+
+    .readmore{
+        display: none;
+    }
+
+    span{
+        display: none;
+    }
+
+    .hl-mobile{
+        display: none;
+    }
+
+    .title{
+        margin-top: 200%;
+        display: flex;
+        justify-self: center;
+        width: 90px;
+        height: 350px;
+        background-color: #BF5123;
+        margin-right: 100%;
+        border: #222925 4px solid;
+        writing-mode: vertical-rl;
+        grid-area: title;
+
+    }
+
+    .title h1 {
+        color: #F5ECDF;
+        text-align: center;
+        width: auto;
+        margin: auto;
+  
+    }
+
+    .road{
+        display: block;
+        width: 60%;
+        margin: 200px auto auto 15%;
+    }
+
+
+    #more {display:block;}
+    #more2 {display: block;}
+    #more3 {display: block;}
 
 }
 

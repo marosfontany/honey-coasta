@@ -43,6 +43,7 @@ navSlideee();
 
 
 function myFunction(dotsn,moren,btnTextn) {
+
   var dots = document.getElementById(dotsn);
   var moreText = document.getElementById(moren);
   var btnText = document.getElementById(btnTextn);
