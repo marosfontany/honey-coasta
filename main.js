@@ -59,12 +59,4 @@ function myFunction(dotsn,moren,btnTextn) {
   }
 }
 
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 2,
-  spaceBetween: 40,
-  centeredSlides: true,
-  grabCursor: true,
-  loop: true,
-});
-
 
