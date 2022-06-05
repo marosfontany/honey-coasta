@@ -1,0 +1,881 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5ECDF;
+    z-index: 0;
+    color: #222925;
+}
+
+body a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.line {
+    height: 4px;
+    background-color: #222925;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+.menu-for-desktop {
+    display: none;
+}
+
+.introduction {
+    margin: 40px;
+    border: solid 4px #222925;
+    display: grid;
+}
+
+.logo-mobile {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    width: 300px;
+    height: 17px;
+    margin-bottom: 5%;
+    background-color: #A4BFBA;
+    border: solid 4px #222925;
+    text-align: right;
+}
+
+.line1 {
+    width: 200px;
+}
+
+.menu {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.mainmenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5ECDF;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    overflow-y: scroll;
+}
+
+nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 25px;
+    border-bottom: solid 4px #222925;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222925;
+}
+
+.nav-links {
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "close-button close-button"
+    "lt en"
+    "hc hc";
+    align-items: center;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+.close-button {
+    grid-area: close-button;
+    border-bottom: solid 4px #222925;
+}
+
+.lt {
+    grid-area: lt;
+    border-right: solid 4px #222925;
+}
+
+.en {
+    grid-area: en;
+}
+
+.hc {
+    grid-area: hc;
+    text-align: center;
+    border-top: solid 4px #222925;
+}
+
+.logo {
+    display: flex;
+}
+
+.wasp {
+    width: 65px;
+}
+
+.honeycoasta {
+    width: 190px;
+}
+
+.main-image1 {
+    display: none;
+}
+
+.main-images {
+    display: grid;
+    justify-content: center;
+}
+
+.main-image2 {
+    height: 250px;
+    width: 210px;
+    object-fit: cover;
+    border: solid 4px #222925;
+    margin-top: -140px;
+}
+
+.circle {
+    background-color: #DBA840;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 4px #222925;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.strong-name {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+}
+
+.section-titles {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    border: solid 4px #222925;
+    margin: 40px;
+}
+
+/* about artist section starts here */
+
+.about-paragraph {
+    border: solid 4px #222925;
+    margin: 40px;
+    background-color: #A4BFBA;
+}
+
+.tagline {
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+    border: solid 4px #222925;
+    margin: 16px;
+    padding: 24px;
+    margin-right: 40px;
+}
+
+.tagline-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 16px;
+    margin-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about-picture {
+    margin-top: -65px;
+    margin-left: 60px;
+}
+
+.picture-button-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.read-more {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #222925;
+    border: solid 4px #222925;
+    font-size: 1em;
+    margin-left: -18px;
+}
+
+.circles {
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 6px #222925;
+    margin-right: auto;
+    margin-left: 40%;
+    margin-top: -50px;
+}
+
+.inside-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #222925;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/* about artist section ends here */
+
+/* new releases section starts here */
+.releases {
+    background-color: #DBA840;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.swiper-slide {
+    width: 200px;
+    height: 200px;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.swiper-slide img {
+    width: 200px;
+    height: 200px;
+    border: solid 4px #222925;
+}
+
+.slider-title-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider-title-flex h2 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+.slider-title-flex h3 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.slider-socials {
+    border: solid 4px #222925;
+    width: 200px;
+    padding: 20px;
+}
+
+.slider-socials h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 0.7cm;
+}
+
+
+
+
+/* new releases section ends here */
+
+/* about collaborations section starts here */
+
+.bee-animation {
+    width: 90%;
+    position: absolute;
+}
+
+.collabs {
+    background-color: #537358;
+    color: #F5ECDF;
+}
+
+.socials {
+    border: solid 4px #222925;
+    width: 91px;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5ECDF;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.instagram {
+    width: 53px;
+}
+
+.collab {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 4px #222925;
+}
+
+.collab-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: solid 4px #222925;
+    background-color: #537358;
+    color: #F5ECDF;
+    margin: 40px;
+    padding: 20px;
+}
+
+
+
+/* about collaborations section ends here */
+
+/* footer starts here */
+
+footer {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2 {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.terms {
+    grid-area: terms;
+    border-bottom: solid 4px #222925;
+}
+
+.policy {
+    grid-area: policy;
+    border-bottom: solid 4px #222925;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 240px;
+}
+
+.footer-line {
+    grid-area: footer-line;
+    height: 4px;
+    width: 165px;
+    background-color: #222925;
+}
+
+.copy {
+    grid-area: copy;
+    padding: 0;
+}
+
+.tiktok {
+    grid-area: tiktok;
+}
+
+.ig {
+    grid-area: ig;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+    border-top: solid 4px #222925;
+}
+
+.apple {
+    grid-area: apple;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.spotify {
+    grid-area: spotify;
+    border-top: solid 4px #222925;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    "terms terms"
+    "policy policy"
+    "footer-logo footer-logo"
+    "footer-line copy"
+    "tiktok ."
+    "ig soundcloud"
+    "apple spotify";
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer ends here */
+
+@media(min-width: 1440px) {
+    .merch-images {
+        height: 340px;
+        width: 340px;
+    }
+
+    .buttons {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 35px;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
+    }
+
+    .honeycoasta {
+        width: 150px;
+    }
+
+    .wasp {
+        display: none;
+    }
+
+    .lt, .en, .close-button,.menu-button {
+        font-size: 1em;
+        padding: 55px;
+    }
+
+    .buttons > * {
+        transform: rotate(-90deg);
+    } 
+
+    .mainmenu {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+
+    }
+
+    .navigation {
+        height: 100vh;
+        padding: 0;
+        padding-top: 10vh;
+        z-index: 100;
+    }
+
+    .hc {
+        border-top: none;
+    }
+
+    .en {
+        border-right: solid 4px #222925;
+        border-left: solid 4px #222925;
+    }
+
+    .lt {
+        border-right: solid 4px #222925;
+    }
+
+    .close-button {
+        border-bottom: none;
+    }
+
+    nav {
+        padding-top: 0;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    .buttons, .nav-links {
+        height: 90vh;
+    }
+
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
+
+    }
+
+    .introduction {
+        border: solid 4px #222925;
+        margin: 40px;
+        height: 90vh;
+    }
+
+    .logo-lines {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .line {
+        margin-bottom: 3%;
+        margin-left: auto;
+        height: 13px;
+    }
+
+    .lines {
+        margin-top: 60px;
+        margin-left: auto;
+    }
+
+    .circle {
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        z-index: 0;
+        left: 30%;
+        bottom: 60px;
+
+    }
+
+    .text-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .arrow-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1em;
+    }
+
+    .arrow {
+        width: 34px;
+    }
+
+    .swiper {
+        display: none;
+    }
+
+    .main-images {
+        grid-auto-flow: column;
+        grid-gap: 60px;
+    }
+
+    .main-image2 {
+        height: 290px;
+        width: 260px;
+        margin-top: 0;
+    }
+
+    .main-image1 {
+        display: block;
+        height: 290px;
+        width: 260px;
+        object-fit: cover;
+        border: solid 4px #222925;
+        margin-top: 0;
+    }
+
+    .middle {
+        margin-top: 40px;
+    }
+
+    .right {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .logo-mobile {
+        margin-left: 30%;
+        margin-right: 0;
+    }
+
+    h1 {
+        text-align: right;
+        padding-right: 10%;
+        margin-top: 0;
+        margin-bottom: 80%;
+        margin-left: auto;
+    }
+
+    .footer-grid {
+        grid-template-areas: 
+        ". footer-logo copy . terms policy policy"
+        ". footer-logo tiktok ig soundcloud apple spotify";
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .soundcloud, .apple, .spotify {
+        border-top: 0;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .terms, .policy {
+        border-left: solid 4px #222925;
+    }
+
+    .copy {
+        border-bottom: solid 4px #222925;
+    }
+
+    .ig {
+        border-top: solid 4px #222925;
+    }
+
+    .collab1-grid {
+        grid-area: collab1-grid;
+    }
+
+    .collab2-grid {
+        grid-area: collab2-grid;
+    }
+
+    .collab3-grid {
+        grid-area: collab3-grid;
+    }
+
+    .collabs-title {
+        grid-area: collabs-title;
+        writing-mode:vertical-lr;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .collaborations {
+        display: grid;
+        grid-template-areas: 
+        "collab1-grid collab2-grid collab3-grid collabs-title"
+        ". . . collabs-title";
+    }*/
+
+    .socials {
+       
+        position:unset;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+   
+    .collab1social {
+        grid-area: collab1social;
+
+    }
+
+    .collab2social {
+        grid-area: collab2social;
+    }
+
+    .collab3social {
+        grid-area: collab3social;
+    }
+
+    .collab1pic {
+        grid-area: collab1pic;
+    }
+
+    .collab2pic {
+        grid-area: collab2pic;
+    }
+
+    .collab3pic {
+        grid-area: collab3pic;
+    }
+
+    .collab1text {
+        grid-area: collab1text;
+    }
+
+    .collab2text {
+        grid-area: collab2text;
+    }
+
+    .collab3text {
+        grid-area: collab3text;
+    }
+
+    .collab1-grid {
+        width: 400px;
+        display: grid;
+        grid-template-areas: 
+        "collab1pic"
+        "collab1text"
+        "collab1social";
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .collab2-grid {
+        width: 400px;
+        display: grid;
+        grid-template-areas: 
+        "collab2social"
+        "collab2text"
+        "collab2pic";
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .collab3-grid {
+        width: 400px;
+        display: grid;
+        grid-template-areas: 
+        "collab3pic"
+        "collab3text"
+        "collab3social";
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bee-animation {
+        width: 30%;
+    }
+
+    .about {
+        grid-area: about;
+        transform: rotate(-90deg);
+    }
+
+    .description {
+        grid-area: description;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-areas: 
+        "description about";
+        grid-template-columns: 3fr 1fr;
+    }
+
+
+
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+

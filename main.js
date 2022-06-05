@@ -43,6 +43,7 @@ navSlideee();
 
 
 function myFunction(dotsn,moren,btnTextn) {
+
   var dots = document.getElementById(dotsn);
   var moreText = document.getElementById(moren);
   var btnText = document.getElementById(btnTextn);
@@ -57,5 +58,13 @@ function myFunction(dotsn,moren,btnTextn) {
     moreText.style.display = "inline";
   }
 }
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+});
 
 

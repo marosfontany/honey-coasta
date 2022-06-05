@@ -28,7 +28,7 @@ h2 a {
 }
 
 nav {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .header-grid {
@@ -170,6 +170,7 @@ h1{
     margin-top: 8%;
     margin-bottom: 10%;
     margin-left: 5%;
+   
 }
 
 .form{
@@ -209,22 +210,22 @@ input[type=submit] {
     font-weight: 600;
 }
 .bumblebee{
-    max-width: 51%;
-    margin-top: -7.8rem;
-    margin-left: -3rem;
+    max-width: 30%;
+    margin-top: -8rem;
     z-index: 5;
     position: relative;
 }
 
 /* streaming links*/
 .stream{
-    margin: 0px 20px 40px 40px ;
+    margin: 10px 20px 40px 40px ;
 }
 .applediv{
     background-color: #537358;
     border: 4px solid #222925;
     margin: 0% 40% 5% 0%;
     padding: 8%;
+    
 }
 .apple{
     max-width: 100%;
@@ -251,7 +252,7 @@ input[type=submit] {
 /* social media links*/
 
 .socials{
-    margin: 70px 20px 40px 20px ;
+    margin: 55px 20px 40px 20px ;
 }
 .fbdiv{
     background-color: #537358;
@@ -305,6 +306,9 @@ input[type=submit] {
     z-index: -1;
 }
 
+.menu-for-desktop{
+    display: none;
+}
 
 @media(min-width: 1440px) {
     .buttons {
@@ -314,6 +318,41 @@ input[type=submit] {
         "en"
         "hc";
         grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 3%;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
     }
 
     .honeycoasta {
@@ -344,6 +383,7 @@ input[type=submit] {
         height: 100vh;
         padding: 0;
         padding-top: 10vh;
+        z-index: 100;
     }
 
     .hc {
@@ -364,38 +404,185 @@ input[type=submit] {
     }
 
     nav {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     .navigation {
         position: fixed;
     }
 
-    nav li {
-        padding: 30px;
-    }
-
     .buttons, .nav-links {
-        height: 85vh;
+        height: 90vh;
     }
 
-    .header-grid {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 5fr;
-
-    }
-
-    .introduction {
-        border: solid 4px #222925;
-        margin: 40px;
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
     }
 
     .menu {
         display: none;
     }
 
+    .sidebar {
+        grid-area: sidebar;
+    }
 
+    .content {
+        grid-area: content;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
+
+    }
+
+    
+    .borderbox{
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+        'redbox form socials'
+        'redbox form socials'
+        'stream form socials';
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 40px;
+    }
+
+    .redbox{
+        grid-area: redbox;
+        margin-top: 5%;
+        margin-bottom: 20px;
+
+    }
+
+    .title{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 5%;
+        text-align: left;
+    }
+
+    .formbox{
+        grid-area: form;
+    }
+
+    .stream{
+        grid-area: stream;
+        height: 200px;
+    }
+
+    .socials{
+        grid-area: socials;
+        margin-top: 15px;
+    }
+
+
+    .fbdiv{
+        margin: 6% 12% 5% 5%;
+        padding: 15%;
+        width: 180px;
+    }
+    .redball{
+        max-width: 60%;
+        margin-top: -6rem;
+        margin-left: 6rem;
+    }
+    
+    .igdiv{
+        margin: 30% 14% 5% 5%;
+        padding: 15%;
+        width: 180px;
+    }
+ 
+    .blueball{
+        max-width: 66%;
+        margin-top: -7rem;
+        margin-right: 30%;
+        margin-left: 12%;
+
+    }
+    
+    .tiktokdiv{
+        margin: 30% 12% 5% 5%;
+        padding: 13%;
+        width: 180px;
+    }
+   
+    .greenball{
+        max-width: 68%;
+        margin-top: -8rem;
+        margin-left: -1.5rem;
+        
+    }
+
+    .stream{
+    margin: 10px 20px 40px 40px ;
+    }
+
+    .applediv{
+        margin-bottom: 100px;
+        padding: 2%;
+        width: 130px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cloudiv{
+        margin-left: 160px;
+        padding: 3%;
+        width: 130px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        margin-top: -330px;
+    }
+
+    .spotifydiv{
+        padding: 4%;
+        width: 130px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        margin-left: 320px;
+        margin-top: -296px;
+    }
+
+    .formtitle{
+        font-size: 35px;
+        width: 60%;
+    }
+
+    .form{
+        margin: 5% 10% 12% 5%;
+    }
+
+    input[type=text], select {
+        margin-bottom: 40px;
+    }
+
+    #message{
+        padding:80px;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        float: right;
+    }
+
+    .bumblebee{
+        max-width: 15%;
+        margin-top: -9rem;
+        margin-left: 110%;  
+    }
 
 }
 
