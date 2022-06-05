@@ -153,8 +153,7 @@ nav ul li a {
     width: 190px;
 }
 
-
-main{
+.content{
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -339,7 +338,7 @@ h4{
     padding: 30px;
 }
 
-.spotify{
+.spotify-btn{
     margin: 10px 0px 70px;
     width: 170px;
     height: 50px;
@@ -350,6 +349,101 @@ h4{
     font-size: 15px;
     font-weight: bold;
     }
+
+
+
+/* footer starts here */
+
+footer {
+    border: solid 4px #222925;
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2 {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.terms {
+    grid-area: terms;
+    border-bottom: solid 4px #222925;
+}
+
+.policy {
+    grid-area: policy;
+    border-bottom: solid 4px #222925;
+}
+
+.cookies {
+    grid-area: cookies;
+    border-bottom: solid 4px #222925;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 240px;
+}
+
+.footer-line {
+    grid-area: footer-line;
+    height: 4px;
+    width: 165px;
+    background-color: #222925;
+}
+
+.copy {
+    grid-area: copy;
+    padding: 0;
+}
+
+.tiktok {
+    grid-area: tiktok;
+}
+
+.ig {
+    grid-area: ig;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+    border-top: solid 4px #222925;
+}
+
+.apple {
+    grid-area: apple;
+    border-top: solid 4px #222925;
+    border-right: solid 4px #222925;
+}
+
+.spotify {
+    grid-area: spotify;
+    border-top: solid 4px #222925;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    "cookies cookies"
+    "terms terms"
+    "policy policy"
+    "footer-logo footer-logo"
+    "footer-line copy"
+    "tiktok ."
+    "ig soundcloud"
+    "apple spotify";
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer ends here */
+
 
 .title{
     display: none;
@@ -504,13 +598,17 @@ h4{
         margin-bottom: 40px;
     }
 
+    .footer{
+        grid-area: footer;
+    }
+
     .wrapper {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 5fr;
         grid-template-areas: 
-        "sidebar content";
-
+        "sidebar content"
+        ". footer";
     }
 
 
@@ -792,8 +890,61 @@ h4{
         display: none;
     }
 
-    .spotify{
+    .spotify-btn{
     margin:  20px 70px 70px;
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    .footer-grid {
+        grid-template-areas: 
+        ". footer-logo copy cookies terms policy policy"
+        ". footer-logo tiktok ig soundcloud apple spotify";
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .footer-logo {
+        width: 220px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .terms, .policy {
+        border-left: solid 4px #222925;
+        border-bottom: none;
+    }
+
+    .cookies {
+        border-bottom: none;
+    }
+
+    .ig {
+        border-top: solid 4px #222925;
+        border-right: none;
+    }
+
+    .soundcloud {
+        border-left: solid 4px #222925;
+    }
+
+    .copy {
+        padding: 40px;
+        border-right: solid 4px #222925;
+    }
+
+    .tiktok {
+        border-top: solid 4px #222925;
+        border-left: solid 4px #222925;
+        border-right: solid 4px #222925;
+    }
+
+    .apple {
+        border-left: solid 4px #222925;
     }
 
 
