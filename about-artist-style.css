@@ -7,6 +7,11 @@
 body {
     background-color: #F5ECDF;
     z-index: 0;
+    color: #222925;
+}
+
+body a {
+    text-decoration: none;
 }
 
 h2 {
@@ -28,11 +33,38 @@ h2 a {
 }
 
 nav {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
-.header-grid {
+.menu-for-desktop {
     display: none;
+}
+
+.introduction {
+    margin: 40px;
+    border: solid 4px #222925;
+    display: grid;
+}
+
+.logo-mobile {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    width: 300px;
+    height: 17px;
+    margin-bottom: 5%;
+    background-color: #A4BFBA;
+    border: solid 4px #222925;
+    text-align: right;
+}
+
+.line1 {
+    width: 200px;
 }
 
 .menu {
@@ -51,8 +83,8 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     overflow-y: scroll;
-    z-index: 10;
 }
+
 
 nav li {
     font-family: 'Montserrat', sans-serif;
@@ -120,6 +152,7 @@ nav ul li a {
 .honeycoasta {
     width: 190px;
 }
+
 
 main{
     margin-left: 40px;
@@ -347,7 +380,6 @@ h4{
 }
 
 @media(min-width: 1440px) {
-
     .buttons {
         grid-template-areas: 
         "close-button"
@@ -355,6 +387,41 @@ h4{
         "en"
         "hc";
         grid-template-rows: 1fr 1fr 1fr 3fr;
+    }
+
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 3%;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
     }
 
     .honeycoasta {
@@ -385,6 +452,7 @@ h4{
         height: 100vh;
         padding: 0;
         padding-top: 10vh;
+        z-index: 100;
     }
 
     .hc {
@@ -405,38 +473,46 @@ h4{
     }
 
     nav {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     .navigation {
         position: fixed;
     }
 
-    nav li {
-        padding: 30px;
-    }
-
     .buttons, .nav-links {
-        height: 85vh;
+        height: 90vh;
     }
 
-    .header-grid {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 5fr;
-
-    }
-
-    .introduction {
-        border: solid 4px #222925;
-        margin: 40px;
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
     }
 
     .menu {
         display: none;
     }
 
-    
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+        border: #222925 solid 4px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
+
+    }
+
 
 
     .vl_desktop{
@@ -522,12 +598,6 @@ h4{
         margin-top: -80px;
     }
 
-    main{
-        width: 79%;
-        float: right;
-        border: #222925 solid 4px;
-        margin-bottom: 50px;
-    }
 
 
     .honey{
@@ -606,8 +676,6 @@ h4{
         border-left: 4px solid #222925;
         height: 100%;  
         margin-left: 43%; 
-
-
     }
 
     .hl{
