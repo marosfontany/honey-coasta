@@ -306,6 +306,18 @@ h4{
     padding: 30px;
 }
 
+.spotify{
+    margin: 10px 0px 70px;
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
+    border-color: #222925;
+    border-width: 3px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+    }
+
 .title{
     display: none;
 }
@@ -315,6 +327,22 @@ h4{
 }
 
 .vl-road{
+    display: none;
+}
+
+.fuzzy{
+    display: none;
+}
+
+.circle{
+    display: none;
+}
+
+.flowers{
+    display: none;
+}
+
+.playlist-song, .playlist-artist, .playlist-album{
     display: none;
 }
 
@@ -408,6 +436,8 @@ h4{
         display: none;
     }
 
+    
+
 
     .vl_desktop{
         display: block; 
@@ -420,10 +450,9 @@ h4{
     .vl-road{
         display: block;
         border-left: 4px solid #222925;
-        height: 100%;  
         margin-left: 43%; 
         margin-top: 20px;
-        height: 160px;
+        height: 200px;
     }
 
 
@@ -497,6 +526,7 @@ h4{
         width: 79%;
         float: right;
         border: #222925 solid 4px;
+        margin-bottom: 50px;
     }
 
 
@@ -547,9 +577,164 @@ h4{
     }
 
 
+    .fuzzy{
+        display: block;
+        margin-left: 80%;
+        margin-top: -10%;
+    }
+
+    .circle{
+        display: block;
+        margin-left: 100px;
+        
+    }
+
+    .meaning-behind-name h1 {
+        margin-left: -390px;
+        margin-bottom: 5px;
+        
+    }
+
+    .logoimg{
+        width: 440px;
+        margin: 0;
+
+    }
+
+    .vl-transition-desktop{
+        display: block;
+        border-left: 4px solid #222925;
+        height: 100%;  
+        margin-left: 43%; 
+
+
+    }
+
+    .hl{
+        width: 32%;
+        margin-left: 38.2%;
+    }
+    
+    .meaning-behind-name-flex{
+        margin-top: -180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .name-description{
+        padding: 30px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .inspirations{
+        margin-left: 10%;
+    }
+
+    .inspirations h1{
+        text-align: left;
+    }
+
+    .inspirations p{
+        text-align: left;
+        width: 70%;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .star{
+        width:150px;
+        height: 200px;
+        padding-bottom: 30px;
+    }
+
+    .transition{
+        display: flex;
+        flex-direction: row-reverse;
+     
+    }
+
+    .vl-transition{
+        display: block;
+        margin-right:70%;
+        height: px;
+        
+    }
+
+    .flowers{
+        display: block;
+        width: 300px;
+        margin-left: 70%;
+        margin-top: -27%;
+    }
+
+   .playlist h1{
+    margin-bottom: 6%;
+ 
+
+   }
+
+    .playlist-box h3{
+        font-size: 17px;
+
+    }
+
+
+
+    .playlist-box{
+        display: grid;
+        grid-template-areas: 
+        "song artist album";
+        grid-template-columns: 3fr 3fr 2fr;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 70px 0 ;
+    }
+
+    .playlist-song{
+        display: block;
+        grid-area: song;
+        margin-left: 8%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    .playlist-artist{
+        display: block;
+        grid-area: artist;
+        margin-left: 8%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    .playlist-album{
+        display: block;
+        grid-area: album;
+        margin-left: 8%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+
+    .playlist-content h3{
+        margin-bottom: 20px;
+    }
+
+    .playlist-text{
+        display: none;
+    }
+
+    .spotify{
+    margin:  20px 70px 70px;
+    }
+
+
+
+
     #more {display:block;}
     #more2 {display: block;}
     #more3 {display: block;}
+
 
 }
 
