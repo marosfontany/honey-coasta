@@ -168,12 +168,27 @@ nav ul li a {
 .-info {
     font-family: 'Montserrat', sans-serif;
 
-} .text {
+} 
+
+.text {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
+    background-color: #dba840;
+}
+
+.guitar { 
+    width: 100%; 
 }
 
 /* media queries */
+
+@media(min-width: 320px) {
+
+    .date {
+        text-align: center;
+    }
+    
+}
 
 @media(min-width: 1440px) {
     .buttons {
@@ -262,6 +277,10 @@ nav ul li a {
 
     .menu {
         display: none;
+    }
+
+    .date {
+        text-align: justify;
     }
 
 
