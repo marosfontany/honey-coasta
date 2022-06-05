@@ -9,8 +9,6 @@ body {
     z-index: 0;
 }
 
-
-/* styling of the menu, code done by Maroš Fontany*/
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -30,7 +28,7 @@ h2 a {
 }
 
 nav {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .header-grid {
@@ -123,6 +121,7 @@ nav ul li a {
     width: 190px;
 }
 
+
 /* end of styling of the menu*/
 
 .title {
@@ -200,6 +199,41 @@ nav ul li a {
         grid-template-rows: 1fr 1fr 1fr 3fr;
     }
 
+    .buttons2 {
+        grid-template-areas: 
+        "close-button"
+        "lt"
+        "en"
+        "hc";
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        position: fixed;
+    }
+
+    nav li {
+        padding: 3%;
+    }
+
+    .nav1 {
+        width: 50%;
+    }
+
+    .nav2 {
+        width: 70%;
+    }
+
+    .nav4 {
+        width: 40%;
+    }
+
+    .nav5 {
+        width: 60%;
+    }
+
+    nav li:last-child {
+        border-bottom: solid 4px #222925;
+        width: 90%;
+    }
+
     .honeycoasta {
         width: 150px;
     }
@@ -228,6 +262,7 @@ nav ul li a {
         height: 100vh;
         padding: 0;
         padding-top: 10vh;
+        z-index: 100;
     }
 
     .hc {
@@ -248,39 +283,43 @@ nav ul li a {
     }
 
     nav {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     .navigation {
         position: fixed;
     }
 
-    nav li {
-        padding: 30px;
-    }
-
     .buttons, .nav-links {
-        height: 85vh;
+        height: 90vh;
     }
 
-    .header-grid {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 5fr;
-
-    }
-
-    .introduction {
-        border: solid 4px #222925;
-        margin: 40px;
+    .menu-for-desktop {
+        display: block;
+        position: fixed;
     }
 
     .menu {
         display: none;
     }
 
-    .date {
-        text-align: justify;
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content";
+
     }
 
 
