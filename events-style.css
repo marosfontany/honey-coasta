@@ -41,6 +41,10 @@ nav {
     margin-top: 80px;
 }
 
+.menu-for-desktop {
+    display: none;
+}
+
 .mainmenu {
     position: fixed;
     right: 0;
@@ -138,7 +142,7 @@ nav ul li a {
     font-family: 'Archivo Black', sans-serif;
 }
 
-.event1 {
+.grid1 {
     border: solid 4px #222925;
     margin: 40px;
 }
@@ -149,7 +153,7 @@ nav ul li a {
     padding: 20px;
 }
 
-.event2 {
+.grid2 {
     border: solid 4px #222925;
     margin: 40px;
 
@@ -179,7 +183,17 @@ nav ul li a {
     width: 100%; 
 }
 
-/* media queries */
+.buy {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #222925;
+    border: solid 4px #222925;
+    font-size: 1em;
+    margin-left: -18px;
+    width: 90px;
+}
 
 @media(min-width: 320px) {
 
@@ -190,6 +204,8 @@ nav ul li a {
 }
 
 @media(min-width: 1440px) {
+
+    /* desktop menu styling */
     .buttons {
         grid-template-areas: 
         "close-button"
@@ -322,11 +338,49 @@ nav ul li a {
 
     }
 
+    /* desktop menu styling ends */
+
+    /* main styling */
+    
+    .title-flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title {
+        writing-mode: vertical-lr;
+    }
+
+    
+
+    /* main styling end*/
+
 
 }
 
 
-.nav-active{
+nav-active{
     transform: translateX(0%);
 }
 
+grid1 {
+    grid-area: grid1;
+}
+
+grid2 {
+    grid-area: grid2;
+}
+
+itle {
+    grid-area: title;
+    writing-mode:vertical-lr;
+    margin: auto;
+    padding: 30px;
+}
+
+event-grid {
+    display: grid;
+    grid-template-areas: 
+    "grid1 title"
+    "grid2";
+}
