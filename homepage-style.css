@@ -752,9 +752,12 @@ footer h2 {
 
     .collabs-title {
         grid-area: collabs-title;
+        writing-mode:vertical-lr;
+        margin: auto;
+        padding: 30px;
     }
 
-    /*.collaborations {
+    .collaborations {
         display: grid;
         grid-template-areas: 
         "collab1-grid collab2-grid collab3-grid collabs-title"
@@ -762,17 +765,16 @@ footer h2 {
     }*/
 
     .socials {
-        position: unset;
+       
+        position:unset;
         margin-top: 0;
         margin-left: 0;
     }
 
-    .collabs-title {
-        transform: rotate(-90deg);
-    }
-
+   
     .collab1social {
         grid-area: collab1social;
+
     }
 
     .collab2social {
@@ -788,11 +790,11 @@ footer h2 {
     }
 
     .collab2pic {
-        grid-area: collab1pic;
+        grid-area: collab2pic;
     }
 
     .collab3pic {
-        grid-area: collab1pic;
+        grid-area: collab3pic;
     }
 
     .collab1text {
@@ -808,31 +810,37 @@ footer h2 {
     }
 
     .collab1-grid {
+        width: 400px;
         display: grid;
         grid-template-areas: 
         "collab1pic"
         "collab1text"
         "collab1social";
+        grid-template-rows: 1fr 0.5fr 0.5fr;
         align-items: center;
         justify-content: center;
     }
 
     .collab2-grid {
+        width: 400px;
         display: grid;
         grid-template-areas: 
         "collab2social"
         "collab2text"
         "collab2pic";
+        grid-template-rows: 0.5fr 0.5fr 1fr;
         align-items: center;
         justify-content: center;
     }
 
     .collab3-grid {
+        width: 400px;
         display: grid;
         grid-template-areas: 
         "collab3pic"
         "collab3text"
         "collab3social";
+        grid-template-rows: 1fr 0.5fr 0.5fr;
         align-items: center;
         justify-content: center;
     }
