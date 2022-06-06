@@ -537,7 +537,6 @@ footer h2 {
     }
   
     .borderbox{
-        height: 90vh;
         display: grid;
         grid-template-areas:
         'redbox form socials'
@@ -568,7 +567,10 @@ footer h2 {
 
     .stream{
         grid-area: stream;
-        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 7% 0 7%;
     }
 
     .socials{
@@ -595,10 +597,10 @@ footer h2 {
     }
  
     .blueball{
-        max-width: 66%;
-        margin-top: -7rem;
+        max-width: 63%;
+        margin-top: -50%;
         margin-right: 30%;
-        margin-left: 12%;
+        margin-left: 10%;
 
     }
     
@@ -615,37 +617,36 @@ footer h2 {
         
     }
 
-    .stream{
-    margin: 10px 20px 40px 40px ;
-    }
-
     .applediv{
-        margin-bottom: 100px;
         padding: 2%;
-        width: 130px;
-        height: 250px;
+        width: 120px;
+        height: 230px;
         display: flex;
         align-items: center;
+        margin: 0;
     }
 
     .cloudiv{
-        margin-left: 160px;
+        margin: 6% 0 0 0;
         padding: 3%;
-        width: 130px;
-        height: 250px;
+        width: 120px;
+        height: 230px;
         display: flex;
         align-items: center;
-        margin-top: -330px;
+     
     }
 
     .spotifydiv{
         padding: 4%;
-        width: 130px;
-        height: 250px;
+        width: 120px;
+        height: 230px;
         display: flex;
         align-items: center;
-        margin-left: 320px;
-        margin-top: -296px;
+       
+        margin: 0;
+   
+        
+    
     }
 
     .formtitle{

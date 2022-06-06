@@ -40,20 +40,6 @@ nav {
     display: none;
 }
 
-.introduction {
-    margin: 40px;
-    border: solid 4px #222925;
-    display: grid;
-}
-
-.logo-mobile {
-    width: 300px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .line {
     width: 300px;
     height: 17px;
@@ -152,35 +138,6 @@ nav ul li a {
     width: 190px;
 }
 
-.main-image1 {
-    display: none;
-}
-
-.main-images {
-    display: grid;
-    justify-content: center;
-}
-
-.main-image2 {
-    height: 250px;
-    width: 210px;
-    object-fit: cover;
-    border: solid 4px #222925;
-    margin-top: -140px;
-}
-
-.circle {
-    background-color: #DBA840;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: solid 4px #222925;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -50px;
-    z-index: -1;
-}
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -189,11 +146,6 @@ h1 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-.strong-name {
-    font-family: Archivo, sans-serif;
-    font-style: normal;
 }
 
 .section-titles {
@@ -306,7 +258,7 @@ footer h2 {
 .item-name {
     padding-left: 20%;
     font-weight: bold;
-    font-size: largem;
+    font-size: large;
 }
 
 .item-description {
@@ -323,6 +275,7 @@ footer h2 {
 .item-price {
     font-weight: bold;
     padding-right: 15%;
+    font-size: medium;
 }
 
 #merch-title {
@@ -331,13 +284,37 @@ footer h2 {
     border: solid 4px #222925;
     background-color:#A4BFBA;
 }
-#merch-title-text{
+
+#merch-mobile{
     margin: 10px;
+    display: block;
 }
 
+#merch-laptop {
+    display: none;
+}
+#flower {
+    margin-bottom: 0%;
+    position: relative;
+    height: 200px;
+    left: 50%;
+}
 @media(min-width: 1440px) {
     #merch-title {
         margin-bottom: 0%;
+        position: absolute;
+        top: -5%;
+        left: 70%;
+    }
+
+    #merch-laptop{
+        margin: 20px;
+        display: block;
+        width: 120%;
+    }
+
+    #merch-mobile{
+        display: none;
     }
     
     .merch-section {
@@ -358,6 +335,14 @@ footer h2 {
         width: 100%;
       }
 
+      #flower {
+        margin-bottom: 0%;
+        position: relative;
+        height: 300px;
+        width: 300px;
+        top: 90%;
+        left: 83%;
+      }    
     .buttons {
         grid-template-areas: 
         "close-button"
@@ -481,55 +466,10 @@ footer h2 {
         grid-template-columns: 1fr 5fr;
         grid-template-areas: 
         "sidebar content";
-
-    }
-
-    .introduction {
-        border: solid 4px #222925;
-        margin: 40px;
-        height: 90vh;
-    }
-
-    .logo-lines {
-        display: flex;
-        flex-direction: row;
     }
 
     .menu {
         display: none;
-    }
-
-    .line {
-        margin-bottom: 3%;
-        margin-left: auto;
-        height: 13px;
-    }
-
-    .lines {
-        margin-top: 60px;
-        margin-left: auto;
-    }
-
-    .circle {
-        margin-left: 0;
-        margin-right: 0;
-        position: relative;
-        z-index: 0;
-        left: 30%;
-        bottom: 60px;
-
-    }
-
-    .text-flex {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .arrow-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 10%;
     }
 
     h4 {
@@ -539,43 +479,11 @@ footer h2 {
         font-size: 1em;
     }
 
-    .arrow {
-        width: 34px;
-    }
-
     .swiper {
         display: none;
     }
 
-    .main-images {
-        grid-auto-flow: column;
-        grid-gap: 60px;
-    }
-
-    .main-image2 {
-        height: 290px;
-        width: 260px;
-        margin-top: 0;
-    }
-
-    .main-image1 {
-        display: block;
-        height: 290px;
-        width: 260px;
-        object-fit: cover;
-        border: solid 4px #222925;
-        margin-top: 0;
-    }
-
-    .middle {
-        margin-top: 40px;
-    }
-
-    .right {
-        margin-top: 20px;
-        margin-left: 40px;
-    }
-
+   
     .logo-mobile {
         margin-left: 30%;
         margin-right: 0;
@@ -617,138 +525,7 @@ footer h2 {
         border-top: solid 4px #222925;
     }
 
-    .collab1-grid {
-        grid-area: collab1-grid;
-    }
-
-    .collab2-grid {
-        grid-area: collab2-grid;
-    }
-
-    .collab3-grid {
-        grid-area: collab3-grid;
-    }
-
-    .collabs-title {
-        grid-area: collabs-title;
-        writing-mode:vertical-lr;
-        margin: auto;
-        padding: 30px;
-    }
-
-    .collaborations {
-        display: grid;
-        grid-template-areas: 
-        "collab1-grid collab2-grid collab3-grid collabs-title"
-        ". . . collabs-title";
-    }*/
-
-    .socials {
-       
-        position:unset;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-   
-    .collab1social {
-        grid-area: collab1social;
-
-    }
-
-    .collab2social {
-        grid-area: collab2social;
-    }
-
-    .collab3social {
-        grid-area: collab3social;
-    }
-
-    .collab1pic {
-        grid-area: collab1pic;
-    }
-
-    .collab2pic {
-        grid-area: collab2pic;
-    }
-
-    .collab3pic {
-        grid-area: collab3pic;
-    }
-
-    .collab1text {
-        grid-area: collab1text;
-    }
-
-    .collab2text {
-        grid-area: collab2text;
-    }
-
-    .collab3text {
-        grid-area: collab3text;
-    }
-
-    .collab1-grid {
-        width: 400px;
-        display: grid;
-        grid-template-areas: 
-        "collab1pic"
-        "collab1text"
-        "collab1social";
-        grid-template-rows: 1fr 0.5fr 0.5fr;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .collab2-grid {
-        width: 400px;
-        display: grid;
-        grid-template-areas: 
-        "collab2social"
-        "collab2text"
-        "collab2pic";
-        grid-template-rows: 0.5fr 0.5fr 1fr;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .collab3-grid {
-        width: 400px;
-        display: grid;
-        grid-template-areas: 
-        "collab3pic"
-        "collab3text"
-        "collab3social";
-        grid-template-rows: 1fr 0.5fr 0.5fr;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bee-animation {
-        width: 30%;
-    }
-
-    .about {
-        grid-area: about;
-        transform: rotate(-90deg);
-    }
-
-    .description {
-        grid-area: description;
-    }
-
-    .about-grid {
-        display: grid;
-        grid-template-areas: 
-        "description about";
-        grid-template-columns: 3fr 1fr;
-    }
-
-
-
 }
-
-
 .nav-active{
     transform: translateX(0%);
 }
