@@ -306,10 +306,12 @@ footer h2 {
 .item-name {
     padding-left: 20%;
     font-weight: bold;
+    font-size: largem;
 }
 
 .item-description {
     padding-left: 20%;
+    padding-right: 80px;
     padding-bottom: 30px;
 }
 
@@ -323,10 +325,18 @@ footer h2 {
     padding-right: 15%;
 }
 
-/* footer ends here */
+#merch-title {
+    margin: 40px;
+    display: grid;
+    border: solid 4px #222925;
+    background-color:#A4BFBA;
+}
+#merch-title-text{
+    margin: 10px;
+}
 
 @media(min-width: 1440px) {
-    .merch-title {
+    #merch-title {
         margin-bottom: 0%;
     }
     
