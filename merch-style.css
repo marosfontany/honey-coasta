@@ -203,197 +203,6 @@ h1 {
     margin: 40px;
 }
 
-/* about artist section starts here */
-
-.about-paragraph {
-    border: solid 4px #222925;
-    margin: 40px;
-    background-color: #A4BFBA;
-}
-
-.tagline {
-    font-family: Archivo, sans-serif;
-    font-style: normal;
-    font-size: 1.1em;
-    border: solid 4px #222925;
-    margin: 16px;
-    padding: 24px;
-    margin-right: 40px;
-}
-
-.tagline-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 16px;
-    margin-right: 40px;
-    padding-bottom: 40px;
-}
-
-.about-picture {
-    margin-top: -65px;
-    margin-left: 60px;
-}
-
-.picture-button-grid {
-    display: flex;
-    flex-direction: row;
-}
-
-.read-more {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    color: #222925;
-    border: solid 4px #222925;
-    font-size: 1em;
-    margin-left: -18px;
-}
-
-.circles {
-    background-color: #fff;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: solid 6px #222925;
-    margin-right: auto;
-    margin-left: 40%;
-    margin-top: -50px;
-}
-
-.inside-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #222925;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-/* about artist section ends here */
-
-/* new releases section starts here */
-.releases {
-    background-color: #DBA840;
-}
-
-.swiper-wrapper {
-    align-items: center;
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
-.swiper-slide {
-    width: 200px;
-    height: 200px;
-}
-
-.swiper-slide-active {
-    transform: scale(1.2);
-    transition: .4s;
-}
-
-.swiper-slide img {
-    width: 200px;
-    height: 200px;
-    border: solid 4px #222925;
-}
-
-.slider-title-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.slider-title-flex h2 {
-    font-family: 'Archivo', sans-serif;
-    font-style: normal;
-    font-size: 1.7em;
-}
-
-.slider-title-flex h3 {
-    font-family: 'Archivo', sans-serif;
-    font-style: normal;
-    font-size: 1.1em;
-}
-
-.slider-socials {
-    border: solid 4px #222925;
-    width: 200px;
-    padding: 20px;
-}
-
-.slider-socials h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.2em;
-    line-height: 0.7cm;
-}
-
-
-
-
-/* new releases section ends here */
-
-/* about collaborations section starts here */
-
-.bee-animation {
-    width: 90%;
-    position: absolute;
-}
-
-.collabs {
-    background-color: #537358;
-    color: #F5ECDF;
-}
-
-.socials {
-    border: solid 4px #222925;
-    width: 91px;
-    height: 80px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5ECDF;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-
-.instagram {
-    width: 53px;
-}
-
-.collab {
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border: solid 4px #222925;
-}
-
-.collab-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border: solid 4px #222925;
-    background-color: #537358;
-    color: #F5ECDF;
-    margin: 40px;
-    padding: 20px;
-}
-
-
-
-/* about collaborations section ends here */
-
-/* footer starts here */
-
 footer {
     border: solid 4px #222925;
     margin: 40px;
@@ -476,13 +285,68 @@ footer h2 {
     align-items: center;
 }
 
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.merch-images {
+    height: 340px;
+    width: 340px;
+    display:block;
+    margin:0 auto;
+}
+
+.merch-section {
+    margin: 40px;
+    display: grid;
+    border: solid 4px #222925
+}
+
+.item-name {
+    padding-left: 20%;
+    font-weight: bold;
+}
+
+.item-description {
+    padding-left: 20%;
+    padding-bottom: 30px;
+}
+
+.item-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price {
+    font-weight: bold;
+    padding-right: 15%;
+}
+
 /* footer ends here */
 
 @media(min-width: 1440px) {
-    .merch-images {
-        height: 340px;
-        width: 340px;
+    .merch-title {
+        margin-bottom: 0%;
     }
+    
+    .merch-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
 
     .buttons {
         grid-template-areas: 
