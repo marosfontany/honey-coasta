@@ -347,8 +347,8 @@ nav ul li a {
     }
 
     .title {
-        writing-mode: vertical-lr;
         grid-area: title;
+        writing-mode: vertical-lr;
     
     }
 
@@ -377,6 +377,6 @@ nav ul li a {
 }
 
 
-nav-active{
+.nav-active{
     transform: translateX(0%);
 }
