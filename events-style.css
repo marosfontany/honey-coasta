@@ -346,28 +346,24 @@ nav ul li a {
         margin-bottom: 40px;
     }
 
+    .title {
+        writing-mode: vertical-lr;
+        grid-area: title;
+    
+    }
+
     .wrapper {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas: 
-        "sidebar content";
-
+        "sidebar content title";
     }
 
     /* desktop menu styling ends */
 
     /* main styling */
     
-    .title-flex {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .title {
-        writing-mode: vertical-lr;
-    
-    }
 
     .abt-ev {
         width: 2.5rem;
@@ -383,26 +379,4 @@ nav ul li a {
 
 nav-active{
     transform: translateX(0%);
-}
-
-grid1 {
-    grid-area: grid1;
-}
-
-grid2 {
-    grid-area: grid2;
-}
-
-itle {
-    grid-area: title;
-    writing-mode:vertical-lr;
-    margin: auto;
-    padding: 30px;
-}
-
-event-grid {
-    display: grid;
-    grid-template-areas: 
-    "grid1 title"
-    "grid2";
 }
