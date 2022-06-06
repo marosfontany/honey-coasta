@@ -31,7 +31,7 @@ nav {
     padding-top: 40px;
 }
 
-.header-grid {
+.menu-for-desktop {
     display: none;
 }
 
@@ -39,10 +39,6 @@ nav {
     border: solid 4px #222925;
     margin: 40px;
     margin-top: 80px;
-}
-
-.menu-for-desktop {
-    display: none;
 }
 
 .mainmenu {
@@ -55,7 +51,6 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     overflow-y: scroll;
-    z-index: 10;
 }
 
 nav li {
@@ -115,6 +110,7 @@ nav ul li a {
 
 .logo {
     display: flex;
+    padding: 20px;
 }
 
 .wasp {
@@ -129,6 +125,8 @@ nav ul li a {
 /* end of styling of the menu*/
 
 .title {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal;
     border: solid 4px #222925;
     margin: 40px;
     margin-top: 20px;
@@ -144,7 +142,6 @@ nav ul li a {
 
 .grid1 {
     border: solid 4px #222925;
-    margin: 40px;
     margin-bottom: 0px;
     margin-top: 100px;
 }
@@ -157,7 +154,6 @@ nav ul li a {
 
 .grid2 {
     border: solid 4px #222925;
-    margin: 40px;
     margin-bottom: 0px;
     margin-top: 100px;
 }
@@ -184,6 +180,8 @@ nav ul li a {
 
 .guitar { 
     width: 100%; 
+    height: 100px;
+    object-fit: cover;
 }
 
 .buy {
@@ -210,6 +208,10 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.content {
+    margin: 40px;
 }
 
 @media(min-width: 320px) {
@@ -342,13 +344,14 @@ nav ul li a {
 
     .content {
         grid-area: content;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin: 40px;
     }
 
     .title {
         writing-mode: vertical-lr;
         grid-area: title;
+        margin-top: 40px;
+        height: 45%;
     
     }
 
@@ -358,6 +361,10 @@ nav ul li a {
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas: 
         "sidebar content title";
+    }
+
+    .grid1 {
+        margin-top: 0;
     }
 
     /* desktop menu styling ends */
@@ -373,10 +380,8 @@ nav ul li a {
 
     /* main styling end*/
 
-
 }
 
-
-nav-active{
+.nav-active{
     transform: translateX(0%);
 }
