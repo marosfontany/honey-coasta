@@ -145,6 +145,8 @@ nav ul li a {
 .grid1 {
     border: solid 4px #222925;
     margin: 40px;
+    margin-bottom: 0px;
+    margin-top: 100px;
 }
 
 .date {
@@ -156,7 +158,8 @@ nav ul li a {
 .grid2 {
     border: solid 4px #222925;
     margin: 40px;
-
+    margin-bottom: 0px;
+    margin-top: 100px;
 }
 
 .lil-info {
@@ -184,15 +187,29 @@ nav ul li a {
 }
 
 .buy {
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-style: normal;
     text-decoration: none;
     color: #222925;
+    background-color: #bf5123;
     border: solid 4px #222925;
     font-size: 1em;
     margin-left: -18px;
-    width: 90px;
+    height: 4rem;
+    width: 10rem;
+    z-index: -1;
+    margin-left: 20rem;
+}
+
+.dateline {
+    height: 4px;
+    background-color: #222925;
+    width: 5rem;
+    transform: rotate(-45deg);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 @media(min-width: 320px) {
@@ -349,9 +366,14 @@ nav ul li a {
 
     .title {
         writing-mode: vertical-lr;
+    
     }
 
-    
+    .abt-ev {
+        width: 2.5rem;
+        height: 20%;
+    }
+
 
     /* main styling end*/
 
