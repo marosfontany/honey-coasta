@@ -41,7 +41,7 @@ navSlide();
 navSlidee();
 navSlideee();
 
-
+//code made by help from https://www.w3schools.com/howto/howto_js_read_more.asp (vievew on: 01/06/2022) //
 function myFunction(dotsn,moren,btnTextn) {
 
   var dots = document.getElementById(dotsn);
@@ -52,7 +52,9 @@ function myFunction(dotsn,moren,btnTextn) {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
     moreText.style.display = "none";
-  } else {
+  } 
+  
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";

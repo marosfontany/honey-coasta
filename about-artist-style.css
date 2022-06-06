@@ -153,23 +153,20 @@ nav ul li a {
     width: 190px;
 }
 
-.content{
+/* artist background section starts here */
+
+.content {
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.artist-background{
+.artist-background {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   }
-
-.background-right{
-    display: flex;
-    flex-direction: column;
 }
 
-.vl{
+.vl {
     border-left: 4px solid #222925;
     height: 100%;  
 }
@@ -179,7 +176,7 @@ h1 {
     font-size: 25px;
     color: #222925;
     margin-bottom: 20px;
-    width: 99%;
+    width: 97%;
 }
 
 p{
@@ -188,40 +185,43 @@ p{
     font-size: 20px;
     width: 90%;
     text-align: left;
-
 }
 
 .honeycoasta-field {
     border: #222925 solid 4px;
-     width: 280px;
+     width: 270px;
      margin-top: -40px;
      margin-bottom: 20px;
-   
 }
 
 .honeycoasta-glasses {
     border: #222925 solid 4px;
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 280px;
+    width: 270px;
 }
 
-.honey{
+.honey {
     margin-top: -50px;
     width: 35%;
-    margin-left: 200px;
+    margin-left: 190px;
     z-index: 2;
 }
 
-#readmorebtn , #readmorebtn2, #readmorebtn3{
+.animation {
+    display: flex;
+    flex-direction: column;
+}
+
+#readmorebtn , #readmorebtn2, #readmorebtn3 {
     font-family: 'Montserrat';
     font-size: 15px;
     font-weight: bold;
 }
 
-.readmore{
+.readmore {
     margin-top: 20px;
-    width: 120px;
+    padding: 11px;
     height: 50px;
     background-color: transparent;
     border-color: #222925;
@@ -232,39 +232,34 @@ p{
 #more2 {display: none;}
 #more3 {display: none;}
 
-
-
-.animation{
-    display: flex;
-    flex-direction: column;
-}
-
 hr{
     border-top: 4px solid #222925;
     margin-bottom: 30px;
-    width: 100%;
-    
+    width: 100%; 
 }
 
-.road{
+/* artist background section end here */
+
+/* meaning behind name section starts here */
+
+.road {
     width: 100%;
     border: #222925 solid 4px;
     margin-top:20px ;
     margin-bottom: 40px;
 }
 
-.meaning-behind-name h1{
+.meaning-behind-name h1 {
     text-align: right;
     margin-bottom: 50px;
 }
 
-
-.logoimg{
+.logoimg {
     width:80%;
     margin-left: 10%;
 }
 
-.meaning-behind-name-flex{
+.meaning-behind-name-flex {
     display: flex;
     flex-direction: row;
 }
@@ -275,58 +270,69 @@ hr{
     width: 100%;
 }
 
-.inspirations{
+/* meaning behind name section ends here */
+
+/* inspirations section starts here */
+
+.inspirations {
     display: flex;
     flex-direction: column;
 }
 
-.inspirations h1{
+.inspirations h1 {
     text-align: right;
 }
 
-.inspirations p{
+.inspirations p {
     width: 97%;
     margin-left: 5%;
 }
 
-.rightbtn{
+.rightbtn {
     text-align: right;
 }
 
-.transition{
+/* inspirations section ends here */
+
+.transition {
     display: flex;
 }
 
-.vl-transition{
+.vl-transition {
     border-left: 4px solid #222925;
     height: 100%;  
     margin-left: 5%; 
     height: 160px;
 }
 
+/* transition section starts here */
 
 .star {
     margin-top: -15px;
     width: 50%;
 }
 
-.playlist h1{
+/* transition section ends here */
+
+/* playlist section starts here */
+
+.playlist h1 {
     text-align: center;
 }
 
-.playlist-box{
+.playlist-box {
     background-color: #537358;
     margin-bottom: 30px;
 }
 
-h3{
+h3 {
     color: #F5ECDF;
     font-family: 'archivo';
     margin-bottom: 3px;
     font-size: 14px;
 }
 
-h4{
+h4 {
     color: #F5ECDF;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -334,23 +340,26 @@ h4{
     font-size: 14px;
 }
 
-.playlist-text{
+.playlist-text {
     padding: 30px;
 }
 
-.spotify-btn{
+.spotify-btn {
+    display: block;
+    background-color: transparent;
+    color: #222925;
+    border: 3px solid #222925;
     margin: 10px 0px 70px;
     width: 170px;
-    height: 50px;
-    background-color: transparent;
-    border-color: #222925;
-    border-width: 3px;
+    padding: 12px;
     font-family: 'Montserrat';
     font-size: 15px;
     font-weight: bold;
-    }
+    text-align: center;
+ 
+}
 
-
+/* playlist section ends here */
 
 /* footer starts here */
 
@@ -444,36 +453,38 @@ footer h2 {
 
 /* footer ends here */
 
-
-.title{
+.title {
     display: none;
 }
 
-.vl_desktop{
+.vl_desktop {
     display: none;
 }
 
-.vl-road{
+.vl-road {
     display: none;
 }
 
-.fuzzy{
+.fuzzy {
     display: none;
 }
 
-.circle{
+.circle {
     display: none;
 }
 
-.flowers{
+.flowers {
     display: none;
 }
 
-.playlist-song, .playlist-artist, .playlist-album{
+.playlist-song, .playlist-artist, .playlist-album {
     display: none;
 }
 
 @media(min-width: 1440px) {
+
+    /* navigation starts here */
+
     .buttons {
         grid-template-areas: 
         "close-button"
@@ -587,6 +598,17 @@ footer h2 {
         display: none;
     }
 
+    /* navigation end here */
+
+    .wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "sidebar content"
+        ". footer";
+    }
+
     .sidebar {
         grid-area: sidebar;
     }
@@ -598,56 +620,17 @@ footer h2 {
         margin-bottom: 40px;
     }
 
-    .footer{
+    .footer {
         grid-area: footer;
     }
 
-    .wrapper {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 5fr;
-        grid-template-areas: 
-        "sidebar content"
-        ". footer";
-    }
+    /* artist background section starts here */
 
-
-
-    .vl_desktop{
-        display: block; 
-        border-left: 4px solid #222925;
-        height: 90%;
-        grid-area: line;  
-        margin-top: 67px;
-    }
-
-    .vl-road{
+    .artist-background {
         display: block;
-        border-left: 4px solid #222925;
-        margin-left: 43%; 
-        margin-top: 20px;
-        height: 200px;
     }
 
-
-
-    .vl{
-        display: none;
-    
-    }
-
-    .animation{
-        grid-area: rightpicture;
-        width: 100%;
-        height: 100%;
-    }
-
-    .artist-background{
-        display: block;
-
-    }
-
-    .desktop_block{
+    .desktop_block {
         display: grid;
         grid-template-areas: 
         "lefttext line rightpicture title"
@@ -655,18 +638,21 @@ footer h2 {
         grid-template-columns: 9fr 1fr 9fr 2fr;
         grid-template-rows: 1fr 1fr;
         height: 700px;
-     
-      }
+    }
 
-    .button_div{
-        display: none;
+    .vl_desktop {
+        display: block; 
+        border-left: 4px solid #222925;
+        height: 90%;
+        grid-area: line;  
+        margin-top: 67px;
     }
 
     p{
         width: 100%;
     }
 
-    .p-left{
+    .p-left  {
 
         grid-area: lefttext;
         margin-top: 80px;
@@ -674,53 +660,44 @@ footer h2 {
         width: 80%;
     }
 
-    .p-right{
+    .p-right {
         grid-area: righttext ;
         width: 80%;
     }
 
-    .honeycoasta-field{
+    .honeycoasta-field {
         grid-area: rightpicture;
         margin-top: 80px;
         margin-bottom: 60px;
-    
     }
 
     .artist-background h1 {
         padding: 3px;
     }
 
-    .honeycoasta-glasses{
+    .honeycoasta-glasses {
         margin-left: 30%;
         grid-area: leftpicture;
         margin-top: -80px;
     }
 
-
-
-    .honey{
+    .honey  {
         margin-left: 260px;
         margin-bottom: -38%;
         margin-top: 40px;
     }
-
-    .readmore{
-        display: none;
+    
+    .animation {
+        grid-area: rightpicture;
+        width: 100%;
+        height: 100%;
     }
 
-    span{
-        display: none;
-    }
-
-    .hl-mobile{
-        display: none;
-    }
-
-    .title{
+    .title {
         margin-top: 200%;
         display: flex;
         justify-self: center;
-        width: 90px;
+        padding: 20px;
         height: 350px;
         background-color: #BF5123;
         margin-right: 100%;
@@ -738,20 +715,31 @@ footer h2 {
   
     }
 
-    .road{
+     /* artist background section ends here */
+
+    /* meaning behind name section starts here */
+
+    .road {
         display: block;
         width: 60%;
         margin: 200px auto auto 15%;
     }
+    
+    .vl-road{
+        display: block;
+        border-left: 4px solid #222925;
+        margin-left: 43%; 
+        margin-top: 20px;
+        height: 200px;
+    }
 
-
-    .fuzzy{
+    .fuzzy {
         display: block;
         margin-left: 80%;
         margin-top: -10%;
     }
 
-    .circle{
+    .circle {
         display: block;
         margin-left: 100px;
         
@@ -763,69 +751,79 @@ footer h2 {
         
     }
 
-    .logoimg{
+    .logoimg {
         width: 440px;
         margin: 0;
-
     }
 
-    .vl-transition-desktop{
+    .vl-transition-desktop {
         display: block;
         border-left: 4px solid #222925;
         height: 100%;  
         margin-left: 43%; 
     }
 
-    .hl{
+    .hl {
         width: 32%;
         margin-left: 38.2%;
     }
     
-    .meaning-behind-name-flex{
+    .meaning-behind-name-flex {
         margin-top: -180px;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .name-description{
+
+    .name-description {
         padding: 30px;
         width: 40%;
         text-align: center;
     }
 
-    .inspirations{
+    /* meaning behind name section ends here */
+
+    /* inspiration section starts here */
+
+    .inspirations {
         margin-left: 10%;
     }
 
-    .inspirations h1{
+    .inspirations h1 {
         text-align: left;
     }
 
-    .inspirations p{
+    .inspirations p {
         text-align: left;
         width: 70%;
         margin-left: 0;
         margin-bottom: 40px;
     }
 
-    .star{
+    /* inspirations section ends here */
+    /* transition section starts here */
+
+    .star {
         width:150px;
         height: 200px;
         padding-bottom: 30px;
     }
 
-    .transition{
+    .transition {
         display: flex;
         flex-direction: row-reverse;
      
     }
 
-    .vl-transition{
+    .vl-transition {
         display: block;
         margin-right:70%;
         height: px;
         
     }
+
+    /* transition section ends here */
+    /* playlist section starts here */
 
     .flowers{
         display: block;
@@ -834,30 +832,25 @@ footer h2 {
         margin-top: -27%;
     }
 
-   .playlist h1{
+    .playlist h1 {
     margin-bottom: 6%;
- 
-
-   }
-
-    .playlist-box h3{
-        font-size: 17px;
-
     }
 
+    .playlist-box h3 {
+        font-size: 17px;
+    }
 
-
-    .playlist-box{
+    .playlist-box {
         display: grid;
         grid-template-areas: 
         "song artist album";
         grid-template-columns: 3fr 3fr 2fr;
         gap: 20px;
         padding: 20px;
-        margin: 0 70px 0 ;
+        margin: 0 70px 0;
     }
 
-    .playlist-song{
+    .playlist-song {
         display: block;
         grid-area: song;
         margin-left: 8%;
@@ -865,7 +858,7 @@ footer h2 {
         margin-bottom: 10%;
     }
 
-    .playlist-artist{
+    .playlist-artist {
         display: block;
         grid-area: artist;
         margin-left: 8%;
@@ -873,7 +866,7 @@ footer h2 {
         margin-bottom: 10%;
     }
 
-    .playlist-album{
+    .playlist-album {
         display: block;
         grid-area: album;
         margin-left: 8%;
@@ -882,17 +875,20 @@ footer h2 {
     }
 
 
-    .playlist-content h3{
+    .playlist-content h3 {
         margin-bottom: 20px;
     }
 
-    .playlist-text{
+    .playlist-text {
         display: none;
     }
 
-    .spotify-btn{
+    .spotify-btn {
     margin:  20px 70px 70px;
     }
+
+    /* playlist section ends here */
+    /* footer starts here */
 
     footer h2 {
         padding-top: 35px;
@@ -947,16 +943,34 @@ footer h2 {
         border-left: solid 4px #222925;
     }
 
+    /* footer ends here */
 
 
+    .button_div {
+        display: none;
+    }
+
+    .readmore {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+
+    .hl-mobile {
+        display: none;
+    }
+
+    .vl {
+        display: none;
+    
+    }
 
     #more {display:block;}
     #more2 {display: block;}
     #more3 {display: block;}
-
-
 }
-
 
 .nav-active{
     transform: translateX(0%);
