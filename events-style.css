@@ -456,12 +456,18 @@ footer h2 {
         writing-mode: vertical-lr;
     }
 
+    .footer {
+        grid-area: footer;
+        margin-left: 80px;
+    }
+
     .wrapper {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas: 
-        "sidebar content title";
+        "sidebar content title"
+        ". footer footer";
     }
     
     /* content grid styling */
