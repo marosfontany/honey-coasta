@@ -136,15 +136,25 @@ nav ul li a {
 }
 
 .artwork1 {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    border: solid 4px #222925;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
 }
 
 .play-song-section {
-    background-color: #A4BFBA;
-    border-top: solid 4px #222925;
     margin-top: -15%;
     padding-bottom: 20%;
+}
+
+.player-grid {
+    margin-top: 10%;
+    padding-bottom: 20%;
+    background-color: #A4BFBA;
+    border-top: solid 4px #222925;
 }
 
 .song-name {
@@ -483,6 +493,50 @@ footer h2 {
         ". footer";
     }
 
+    .play-song-section {
+        margin-top: 0;
+        padding-bottom: 0;
+        border-top: none;
+    }
+
+    .artwork {
+        grid-area: artwork;
+        margin-top: -20%;
+    }
+
+    .played-song {
+        grid-area: played-song;
+        text-align: left;
+    }
+
+    .song-name {
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    .played-button {
+        grid-area: played-button;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .played-year {
+        grid-area: played-year;
+        text-align: left;
+    }
+
+    .player-grid {
+        display: grid;
+        grid-template-areas: 
+        "artwork played-song played-button"
+        "artwork played-year played-button";
+        background-color: #A4BFBA;
+        border-top: solid 4px #222925;
+        margin-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
     footer h2 {
         padding-top: 35px;
     }
@@ -541,8 +595,10 @@ footer h2 {
     }
 
     .releases-img {
-        margin-left: 7%;
+        margin-left: 30%;
         margin-right: 0;
+        width: 150px;
+        height: 150px;
     }
 
     .releases-name, .releases-year {
@@ -577,7 +633,12 @@ footer h2 {
         "rel-img rel-year"
         "rel-img ."
         "rel-img rel-socials";
-        border-bottom: solid 4px #222925;
+        padding-bottom: 3%;
+
+    }
+
+    .releases-year {
+        padding-bottom: 0;
     }
 
     .social-box:hover {
