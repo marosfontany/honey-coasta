@@ -139,7 +139,7 @@ nav ul li a {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.7em;
@@ -149,7 +149,7 @@ h1 {
 }
 
 .section-titles {
-    font-family: Archivo, sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-style: normal;
     border: solid 4px #222925;
     margin: 40px;
@@ -256,12 +256,14 @@ footer h2 {
 }
 
 .item-name {
+    font-family: 'Archivo Black', sans-serif;
     padding-left: 20%;
     font-weight: bold;
     font-size: large;
 }
 
 .item-description {
+    font-family: 'Montserrat', sans-serif;
     padding-left: 20%;
     padding-right: 80px;
     padding-bottom: 30px;
@@ -273,6 +275,7 @@ footer h2 {
 }
 
 .item-price {
+    font-family: 'Archivo Black', sans-serif;
     font-weight: bold;
     padding-right: 15%;
     font-size: medium;
@@ -473,11 +476,12 @@ footer h2 {
     }
 
     h4 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Archivo Black', sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 1em;
     }
+
 
     .swiper {
         display: none;
