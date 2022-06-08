@@ -12,6 +12,7 @@ body {
 
 body a {
     text-decoration: none;
+    color: #222925;
 }
 
 h2 {
@@ -173,9 +174,9 @@ nav ul li a {
 
 .player-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20%;
+    align-items: center;
 }
 
 .play-line {
@@ -205,6 +206,12 @@ nav ul li a {
     transform: rotate(180deg);
 }
 
+.play-next-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* new releases section starts here */
 
 .releases-img {
@@ -220,6 +227,7 @@ nav ul li a {
 .releases-name {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
+    font-size: 1.2em;
     text-align: left;
     padding: 0;
     padding-left: 19%;
@@ -229,6 +237,7 @@ nav ul li a {
 .releases-year {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
+    font-size: 1em;
     text-align: left;
     padding-left: 19%;
     tab-size: 1em;
@@ -243,10 +252,14 @@ nav ul li a {
 
 .social-box {
     display: flex;
-    border: solid 4px #222925;
+    border: solid 3px #222925;
     margin: 20px 60px;
     justify-content: center;
     align-items: center;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
 
 .releases-social {
@@ -518,6 +531,11 @@ footer h2 {
         grid-area: played-button;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 15%;
+    }
+
+    .play-line {
+        width: 300px;
     }
 
     .played-year {
