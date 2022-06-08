@@ -12,6 +12,7 @@ body {
 
 body a {
     text-decoration: none;
+    color: #222925;
 }
 
 h2 {
@@ -204,6 +205,20 @@ h1 {
     margin: 40px;
 }
 
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.arrow-flex {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* about artist section starts here */
 
 .about-paragraph {
@@ -264,6 +279,7 @@ h1 {
 }
 
 .inside-circle {
+    position: relative;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -335,6 +351,10 @@ h1 {
     text-align: center;
     padding: 10px;
 
+}
+
+.line-through {
+    text-decoration: line-through;
 }
 
 .social-img {
@@ -662,13 +682,7 @@ footer h2 {
         flex-direction: column;
         align-items: center;
         margin-left: 10%;
-    }
-
-    h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1em;
+        margin-top: 0;
     }
 
     .arrow {
@@ -713,7 +727,6 @@ footer h2 {
         text-align: right;
         padding-right: 10%;
         margin-top: 0;
-        margin-bottom: 80%;
         margin-left: auto;
     }
 

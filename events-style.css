@@ -9,6 +9,11 @@ body {
     z-index: 0;
 }
 
+body a {
+    text-decoration: none;
+    color: #222925;
+}
+
 /* menu styling */
 
 h2 {
